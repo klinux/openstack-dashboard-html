@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap_theming",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "css-main": "vendor/bootstrap/node_modules/.bin/npm-run-all --parallel css-compile --sequential css-minify-font css-minify-font-themify css-prefix css-minify",
+    "css-compile": "vendor/bootstrap/node_modules/.bin/node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 custom/1.0.0/scss/style.scss custom/1.0.0/css/style.css",
+    "css-prefix": "vendor/bootstrap/node_modules/.bin/postcss --config vendor/bootstrap/build/postcss.config.js --replace \"custom/1.0.0/css/*.css\"",
+    "css-minify": "vendor/bootstrap/node_modules/.bin/cleancss --level 1 --source-map --source-map-inline-sources --output custom/1.0.0/css/style.min.css custom/1.0.0/css/style.css",
+    "css-minify-font": "vendor/bootstrap/node_modules/.bin/cleancss --level 1 --source-map --source-map-inline-sources --output custom/1.0.0/fonts/poppins.min.css custom/1.0.0/fonts/poppins.css",
+    "css-minify-font-themify": "vendor/bootstrap/node_modules/.bin/cleancss --level 1 --source-map --source-map-inline-sources --output vendor/themify-icons/themify-icons.min.css vendor/themify-icons/themify-icons.css",
+    "watch-css-main": "vendor/bootstrap/node_modules/.bin/nodemon --ignore vendor/ -e scss -x \"npm run css-main\""
+  },
+  "author": "neuethemes",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^9.4.10",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.14",
+    "stylelint": "^9.10.1"
+  }
+}
