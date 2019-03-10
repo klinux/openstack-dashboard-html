@@ -33,14 +33,14 @@
       }
     });
 
-    if (window.toastr !== undefined) {
+    /*if (window.toastr !== undefined) {
       toastr.options = {
         "closeButton": true,
         "progressBar": true,
         "positionClass": "toast-bottom-right",
       };
       toastr["info"]("Non-blocking notifications available!", "Info");
-    }
+    }*/
 
   });
 

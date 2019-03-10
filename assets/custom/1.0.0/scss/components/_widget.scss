@@ -20,6 +20,7 @@
   .widget-block {
     flex: 1 1 auto;
     padding: 1.7rem;
+    text-align: center;
     header {
       .text-muted { color: $widget-subtitle_color; }
     }

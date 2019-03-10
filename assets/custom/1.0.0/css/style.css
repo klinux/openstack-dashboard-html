@@ -9348,7 +9348,16 @@ a.text-dark:hover, a.text-dark:focus {
   width: 16rem;
 }
 
+.bg-dark {
+  background-color: #222f3c !important;
+}
+
+.text-title {
+  padding: 10px 20px !important;
+}
+
 .sidebar-nav {
+  margin-top: 9px;
   transition: all .3s ease;
 }
 
@@ -9375,7 +9384,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .nav .nav-item > .nav .nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #1c2732;
 }
 
 .nav .nav-item > .nav .nav-level-1 {
@@ -9403,9 +9412,6 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   padding: .8rem 1.5rem;
   white-space: nowrap;
-  border-style: solid;
-  border-width: 1px 0 0;
-  border-radius: 0;
   /* closed state */
   /* open state */
   /* arrow position */
@@ -9452,17 +9458,18 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav.nav-dark .nav-link:hover {
   color: #fff;
+  background: #1c2732;
 }
 
 .nav.nav-dark .nav-link[aria-expanded="true"] {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #222f3c;
   border-left: 2px solid;
 }
 
 .nav.nav-dark .collapse .nav-link,
 .nav.nav-dark .collapsing .nav-link {
   background-color: rgba(0, 0, 0, 0.2);
-  border-left: 2px solid;
+  border-left: 1px solid;
 }
 
 .nav-tabs {
@@ -9472,7 +9479,7 @@ a.text-dark:hover, a.text-dark:focus {
 .nav-tabs .nav-link {
   padding: .7rem 2rem;
   color: #adb5bd;
-  background: #e9ecef;
+  background: #1c2732;
 }
 
 .nav-tabs .nav-link:hover {
@@ -9481,7 +9488,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav-tabs .nav-link.active {
   color: #495057;
-  background: #f8f9fa;
+  background: #1c2732;
 }
 
 .nav-tabs.nav-tabs-dark {
@@ -9550,10 +9557,6 @@ a.text-dark:hover, a.text-dark:focus {
   float: none;
 }
 
-#cssmenu.align-center ul ul {
-  text-align: left;
-}
-
 #cssmenu.align-right > ul > li {
   float: right;
 }
@@ -9568,6 +9571,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 #cssmenu > ul > li:hover > a {
   color: crimson;
+  background: #e9ecef;
 }
 
 #cssmenu > ul > li.has-sub > a {
@@ -9581,7 +9585,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 8px;
   height: 2px;
   display: block;
-  background: #dddddd;
+  background: #999999;
   content: '';
 }
 
@@ -9592,7 +9596,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
   width: 2px;
   height: 8px;
-  background: #dddddd;
+  background: #999999;
   content: '';
   transition: all .25s ease;
 }
@@ -9602,18 +9606,57 @@ a.text-dark:hover, a.text-dark:focus {
   height: 0;
 }
 
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+
 #cssmenu ul ul {
   position: absolute;
   left: -9999px;
+  width: 400px;
+  max-width: 400px;
+  border-top: 3px solid crimson;
+  border-bottom: 3px solid crimson;
 }
 
 #cssmenu.align-right ul ul {
   text-align: right;
 }
 
-#cssmenu ul ul li {
-  height: 0;
-  transition: all .25s ease;
+#cssmenu ul .ul-box {
+  background: #e9ecef;
+}
+
+#cssmenu ul ul .li-menu {
+  padding: 20px;
+}
+
+#cssmenu ul ul .li-menu-domain {
+  padding: 11px;
+}
+
+#cssmenu ul ul .li-menu-project {
+  padding-left: 30px;
+}
+
+#cssmenu ul ul .li-menu-project a:hover {
+  color: crimson;
+}
+
+#cssmenu ul ul .li-menu-domain a .menu-icon {
+  padding-right: 10px;
+}
+
+#cssmenu ul ul .li-menu-domain .menu-icon-title {
+  padding-right: 10px;
+}
+
+#cssmenu ul ul .li-menu a:hover {
+  color: crimson;
+}
+
+#cssmenu ul ul .li-menu a .menu-icon {
+  padding-right: 10px;
 }
 
 #cssmenu li:hover > ul {
@@ -9623,10 +9666,6 @@ a.text-dark:hover, a.text-dark:focus {
 #cssmenu.align-right li:hover > ul {
   left: auto;
   right: 0;
-}
-
-#cssmenu li:hover > ul > li {
-  height: 35px;
 }
 
 #cssmenu ul ul ul {
@@ -9639,26 +9678,11 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 100%;
 }
 
-#cssmenu ul ul li a {
-  border-bottom: 1px solid rgba(150, 150, 150, 0.15);
-  padding: 11px 15px;
-  width: 200px;
-  font-size: 12px;
-  text-decoration: none;
-  color: #999999;
-  background: #d4d0d0;
-}
-
-#cssmenu ul ul li:last-child > a,
-#cssmenu ul ul li.last-item > a {
-  border-bottom: 0;
-}
-
+/*
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li a:hover {
-  color: #ffffff;
+  color: crimson;
 }
-
 #cssmenu ul ul li.has-sub > a:after {
   position: absolute;
   top: 16px;
@@ -9669,12 +9693,10 @@ a.text-dark:hover, a.text-dark:focus {
   background: #dddddd;
   content: '';
 }
-
 #cssmenu.align-right ul ul li.has-sub > a:after {
   right: auto;
   left: 11px;
 }
-
 #cssmenu ul ul li.has-sub > a:before {
   position: absolute;
   top: 13px;
@@ -9684,19 +9706,22 @@ a.text-dark:hover, a.text-dark:focus {
   height: 8px;
   background: #dddddd;
   content: '';
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
   transition: all .25s ease;
 }
-
 #cssmenu.align-right ul ul li.has-sub > a:before {
   right: auto;
   left: 14px;
 }
-
 #cssmenu ul ul > li.has-sub:hover > a:before {
   top: 17px;
   height: 0;
 }
 
+*/
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 100%;
@@ -9736,7 +9761,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   #cssmenu ul ul li:hover > a,
   #cssmenu ul ul li.active > a {
-    color: #ffffff;
+    color: green;
   }
   #cssmenu ul ul,
   #cssmenu ul ul ul,
@@ -9941,6 +9966,7 @@ a.text-dark:hover, a.text-dark:focus {
 .widget .widget-block {
   flex: 1 1 auto;
   padding: 1.7rem;
+  text-align: center;
 }
 
 .widget .widget-block header .text-muted {
@@ -10091,24 +10117,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .logo {
   position: relative;
-}
-
-.logo i {
-  width: 80px;
+  background: #ffffff;
   height: 80px;
-  font-size: 40px;
-  line-height: 80px;
-  color: #212529;
-  background: #dee2e6;
-}
-
-.logo .logo-title {
-  color: #dee2e6;
-  letter-spacing: .4rem;
-}
-
-.logo p {
-  color: #ced4da;
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
 }
 
 .logo.logo-dark i {
@@ -10126,14 +10137,8 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 1.2rem 0;
 }
 
-.logo-mobile i {
-  width: 40px;
-  height: 40px;
-  font-size: 22px;
-  line-height: 40px;
-  color: #212529;
-  background: #dee2e6;
-  transition: all .3s ease-in-out;
+.logo-mobile img {
+  width: 50%;
 }
 
 .shadow-01 {

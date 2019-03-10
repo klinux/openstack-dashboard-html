@@ -1,4 +1,6 @@
 .sidebar-nav {
+  margin-top: 9px;
+  
   //width: 16rem;
   transition: all .3s ease;
 
@@ -17,7 +19,7 @@
 .nav {
   .nav-item > .nav {
     .nav-link:hover {
-      background-color: rgba(0, 0, 0, .4);
+      background-color: $color-background-left-sidebar-hover;
     }
 
     /* level 1 */
@@ -50,9 +52,6 @@
   position: relative;
   padding: .8rem 1.5rem;
   white-space: nowrap;
-  border-style: solid;
-  border-width: 1px 0 0;
-  border-radius: 0;
 
   .badge {
     font-weight: 400;
@@ -95,11 +94,12 @@
     border-color: $nav-dark-item_border-color;
     &:hover {
       color: $nav-dark-item_hover-color;
+      background: $color-background-left-sidebar-hover;
     }
 
     /* opened items */
     &[aria-expanded="true"] {
-      background-color: rgba(0, 0, 0, .2);
+      background-color: $color-background-left-sidebar;
       border-left: 2px solid;
     }
   }
@@ -108,7 +108,7 @@
   .collapse .nav-link,
   .collapsing .nav-link {
     background-color: rgba(0, 0, 0, .2);
-    border-left: 2px solid;
+    border-left: 1px solid;
   }
 
 }
@@ -118,11 +118,11 @@
   .nav-link {
     padding: .7rem 2rem;
     color: $nav-tabs-navlink_color;
-    background: $nav-tabs-navlink_bg;
+    background: $color-background-left-sidebar-hover;
     &:hover { color: $nav-tabs-navlink-hover_color; }
     &.active {
       color: $nav-tabs-navlink-active_color;
-      background: $nav-tabs-navlink-active_bg;
+      background: $color-background-left-sidebar-hover;
     }
   }
 }
