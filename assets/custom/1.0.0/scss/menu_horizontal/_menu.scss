@@ -3,17 +3,17 @@
 #cssmenu ul li,
 #cssmenu ul li a,
 #cssmenu #menu-button {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style: none;
-    line-height: 1;
-    display: block;
-    position: relative;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    z-index: 1000;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 0.7;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 1000;
 }
 #cssmenu:after,
 #cssmenu > ul:after {
@@ -42,14 +42,14 @@
   float: right;
 }
 #cssmenu > ul > li > a {
-    padding: 17px;
+    padding: 15px;
     font-size: 12px;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
 }
 #cssmenu > ul > li:hover > a {
-  color: crimson;
+  color: #ffffff;
   background: $color-background-menu-horizontal;
 }
 #cssmenu > ul > li.has-sub > a {
@@ -57,22 +57,22 @@
 }
 #cssmenu > ul > li.has-sub > a:after {
   position: absolute;
-  top: 22px;
+  top: 24px;
   right: 11px;
   width: 8px;
   height: 2px;
   display: block;
-  background: #999999;
+  background: grey 80%;
   content: '';
 }
 #cssmenu > ul > li.has-sub > a:before {
   position: absolute;
-  top: 19px;
+  top: 21px;
   right: 14px;
   display: block;
   width: 2px;
   height: 8px;
-  background: #999999;
+  background: grey 80%;
   content: '';
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -90,10 +90,8 @@
 #cssmenu ul ul {
   position: absolute;
   left: -9999px;
-  width: 400px;
-  max-width: 400px;
-  border-top: 3px solid crimson;
-  border-bottom: 3px solid crimson;
+  width: 450px;
+  max-width: 450px;
 }
 #cssmenu.align-right ul ul {
   text-align: right;
@@ -104,14 +102,18 @@
 #cssmenu ul ul .li-menu {
   padding: 20px;
 }
+#cssmenu ul ul li a i {
+  padding-right: 10px;
+}
 #cssmenu ul ul .li-menu-domain {
-  padding: 11px;
+  padding: 10px 10px 10px 20px;
+  color: #d4d9dd;
 }
 #cssmenu ul ul .li-menu-project {
-  padding-left: 30px;
+  padding-left: 40px;
 }
 #cssmenu ul ul .li-menu-project a:hover {
-  color: crimson;
+  color: #02e4b0;
 }
 #cssmenu ul ul .li-menu-domain a .menu-icon {
   padding-right: 10px;
@@ -119,8 +121,11 @@
 #cssmenu ul ul .li-menu-domain .menu-icon-title {
   padding-right: 10px;
 }
+#cssmenu ul ul .li-menu a {
+  color: #d4d9dd;
+}
 #cssmenu ul ul .li-menu a:hover {
-  color: crimson;
+  color: #02e4b0;
 }
 #cssmenu ul ul .li-menu a .menu-icon {
   padding-right: 10px;
@@ -185,7 +190,6 @@
 }
 
 */
-
 
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {

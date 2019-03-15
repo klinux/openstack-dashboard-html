@@ -7,7 +7,7 @@ $font-family-sans-serif: 'Poppins', sans-serif;
 $link-color: inherit;
 $link-hover-color: rgba(0, 0, 0, .8);
 $font-size-base: .9rem;
-$color-background-menu-horizontal: #e9ecef;
+$color-background-menu-horizontal: #222f3c;
 $color-background-left-sidebar: #222f3c;
 $color-background-left-sidebar-hover: #1c2732;
 
@@ -27,6 +27,7 @@ $color-background-left-sidebar-hover: #1c2732;
 @import "elements/buttons";
 @import "components/widget";
 @import "components/logo";
+@import "components/_datepicker";
 @import "helpers/extensions";
 @import "pages/login";
 @import "pages/404";

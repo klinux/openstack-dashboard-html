@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>netK Admin</title>
+
+  <!-- Required Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="html5, template, website, responsive, bootstrap">
+  <meta name="author" content="netk">
+
+  <!-- Favicon -->
+  <link rel="icon" href="" sizes="32x32"/>
+  <link rel="icon" href="" sizes="192x192"/>
+
+  <!-- Main CSS with Bootstrap -->
+  <link rel="stylesheet" href="assets/custom/1.0.0/css/style.min.css">
+  
+  <!-- CSS Vendor -->
+  <link rel="stylesheet" href="assets/vendor/fontawesome5/css/all.min.css">
+  <link rel="stylesheet" href="assets/vendor/themify-icons/themify-icons.min.css">
+  <link rel="stylesheet" href="assets/vendor/feathericon/css/feathericon.min.css">
+  <link rel="stylesheet" href="assets/vendor/toastr/2.1.3/toastr.min.css">
+  <link rel="stylesheet" href="assets/vendor/highlight/9.12.0/styles/default.css">
+
+  <!-- Javascript -->
+  <script src="assets/vendor/jquery/3.2.1/jquery-3.2.1.min.js"></script>
+</head>
+
+<body class="bg-gray-200">
+
+<div class="container-fluid no-gutters">
+<div class="row">
+
+    <!-- Left Sidebar -->
+    <div id="sidebar-left" class="sidebar-left bg-dark text-light pl-0 pr-0">
+      <div class="collapse-wrapper">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <div class="text-center">
+              <img src="assets/custom/1.0.0/images/logo.svg"/>
+            </div>
+          </a>
+        </div>
+        <!-- /Logo -->
+
+        <!-- Logo mobile -->
+        <div class="logo-mobile w-100">
+          <a href="index.html">
+            <div class="text-center text-nowrap">
+              <img src="assets/custom/1.0.0/images/symbol_openstack.svg"/>
+            </div>
+          </a>
+        </div>
+        <!-- /Logo mobile -->
+
+        <nav class="sidebar-nav">
+          <!-- Sidebar Menu -->
+          <div class="mb-1 text-uppercase d-none d-lg-block text-title text-muted">
+            <small>ELASTIC COMPUTE INSTANCE</small>
+          </div>
+          <ul id="sidebarNav" class="nav nav-dark flex-column">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fe fe-home" aria-hidden="true"></i>
+                <span class="d-none d-lg-inline">Overview</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="charts.html">
+                <i class="fe fe-desktop" aria-hidden="true"></i>
+                <span class="d-none d-lg-inline">Compute Instances</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="widgets.html">
+                <i class="fe fe-layer" aria-hidden="true"></i>
+                <span class="d-none d-lg-inline">Images</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tables.html">
+                <i class="fe fe-key" aria-hidden="true"></i>
+                <span class="d-none d-lg-inline">Key Pairs</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tables.html">
+                <i class="fe fe-vector" aria-hidden="true"></i>
+                <span class="d-none d-lg-inline">Server Groups</span>
+              </a>
+            </li>   
+            <li class="nav-item">
+              <a class="nav-link" href="tables.html">
+                <i class="fe fe-share" aria-hidden="true"></i>
+                <span class="d-none d-lg-inline">Shares</span>
+              </a>
+            </li>                        
+          </ul>
+        </nav>
+
+        <!-- Sidebar Widget -->
+      </div>
+      <!-- /Sidebar Widget -->
+    </div>
+    <!-- /Left Sidebar -->
+
+    <!-- Main Part -->
+    <div class="main-wrapper">
+
+      <!-- Top Toolbar -->
+ <div class="navbar navbar-light bg-white px-3 px-sm-5 py-3">
+            <div class="d-inline-block mr-3">
+              <a href="#" data-target="#sidebar-left" data-toggle="collapse-width" class="btn btn-dark btn-icon rounded-circle shadow-00">
+                <i class="fas fa-bars"></i>
+              </a>
+            </div>
+
+            <ul class="nav">
+              <div id='cssmenu'>
+                <ul>
+                  <li>
+                    <a href='#'><i class="fas fa-cloud fa-lg"></i> Products</a>
+                    <ul class="ul-box">
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fa fa-desktop fa-lg menu-icon"></i> Elastic Compute Instance</h6>
+                            <small class="text-muted">ECI</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="far fa-hdd fa-lg menu-icon"></i> Elastic Block Storage</h6>
+                            <small class="text-muted">EBS</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fas fa-network-wired fa-lg menu-icon"></i> Network Definitions</h6>
+                            <small class="text-muted">SDN</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fas fa-robot fa-lg menu-icon"></i> Composite Cloud Applications</h6>
+                            <small class="text-muted">CCA</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fas fa-sitemap fa-lg menu-icon"></i> Domain Name System</h6>
+                            <small class="text-muted">DNS</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fas fa-store fa-lg menu-icon"></i> Object Store</h6>
+                            <small class="text-muted">OBS</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fas fa-share-alt fa-lg menu-icon"></i> Share File System</h6>
+                            <small class="text-muted">SFS</small>
+                          </div>
+                        </a>
+                      </li>                      
+                    </ul>
+                  </li>
+                  <li>
+                    <a href='#'><i class="fas fa-user-shield fa-lg"></i> Admin</a>
+                    <ul class="ul-box">
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fa fa-desktop fa-lg menu-icon"></i> Compute Manager</h6>
+                            <small class="text-muted">Manager</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="far fa-hdd fa-lg menu-icon"></i> Volumes Manager</h6>
+                            <small class="text-muted">Manager</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fas fa-network-wired fa-lg menu-icon"></i> Network Manager</h6>
+                            <small class="text-muted">Manager</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fas fa-cogs fa-lg menu-icon"></i> System Manager</h6>
+                            <small class="text-muted">Manager</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fas fa-share-alt fa-lg menu-icon"></i> Share Manager</h6>
+                            <small class="text-muted">Manager</small>
+                          </div>
+                        </a>
+                      </li>                      
+                    </ul>
+                  </li>
+                  <li><a href='#'><i class="far fa-id-badge fa-lg"></i> Identity</a>
+                    <ul class="ul-box">
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fa fa-globe fa-lg menu-icon"></i> Domains</h6>
+                            <small class="text-muted">Domains Manager</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fab fa-buromobelexperte fa-lg menu-icon"></i> Projects</h6>
+                            <small class="text-muted">Project Manager</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fas fa-user-friends fa-lg menu-icon"></i> Users</h6>
+                            <small class="text-muted">Users Manager</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fas fa-users fa-lg menu-icon"></i> Groups</h6>
+                            <small class="text-muted">Groups Manager</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fas fa-user-shield fa-lg menu-icon"></i> Roles</h6>
+                            <small class="text-muted">Roles Manager</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fas fa-shield-alt fa-lg menu-icon"></i> Application Credentials</h6>
+                            <small class="text-muted">Credentials Manager</small>
+                          </div>
+                        </a>
+                      </li>              
+                    </ul>
+                  </li>
+                  <li>
+                    <a href='#'><i class="fas fa-globe fa-lg"></i> DOMAINS : <small><i class="fab fa-buromobelexperte"></i> admin</small></a>
+                    <ul class="ul-box">
+                      <li class="li-menu-domain">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fa fa-globe fa-lg menu-icon-title"></i> Default</h6>
+                            <small class="text-muted">Domain</small>
+                          </div>
+                      </li>
+                      <li class="li-menu-domain li-menu-project">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fab fa-buromobelexperte menu-icon"></i> Admin</h6>
+                            <small class="text-muted">Project</small>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="li-menu-domain li-menu-project">
+                        <a href="#">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 mr-4"><i class="fab fa-buromobelexperte menu-icon"></i> System</h6>
+                            <small class="text-muted">Project</small>
+                          </div>
+                        </a>
+                      </li>                  
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+      
+            <ul class="nav ml-auto">
+              
+              <li class="m-sm-1 m-md-2 position-relative">
+                <a data-toggle="dropdown" href="#" aria-expanded="false">
+                  <div class="d-inline-block mr-2">
+                    <img src="assets/custom/1.0.0/images/03.jpg" class="rounded-circle" height="32px">
+                  </div>
+                  <div class="d-none d-lg-inline-block">
+                    <span class="d-block">Kleber Rocha</span>
+                  </div>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> Profile
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa fa-address-card-o" aria-hidden="true"></i> Contacts
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i> Mailbox
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="login.html">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+      <!-- /Top Toolbar -->
+
+      <!-- Main Content -->
+      <main>
+        <!-- Breadcrumbs -->
+        <div class="row px-5 pt-5 pb-0 no-gutters">
+          <div class="col-lg-12">
+            <h2>Compute Instances</h2>
+            <a href="#!">Home</a> / Compute Instances
+          </div>
+        </div>
+        <!-- /Breadcrumbs -->
+
+        <div class="content-wrapper container-fluid px-5 mt-5 mb-4 trans-03-in-out">
+
+<div class="row">
+<div class="col-lg-12 mb-3">
+              <section class="widget shadow-01 mb-4" id="widget-03">
+                <div class="widget-block">
+
+                  <header>
+                    <h5>Displaying 2 items</h5>
+                   </header>
+                   <div class="widget-content py-3">
+        <div class="table_wrapper">
+  <form action="/dashboard/project/instances/" method="POST" class="ng-pristine ng-valid"><input type="hidden" name="csrfmiddlewaretoken" value="kSLNqtRh4wJF21c2jOtOeiRGOpmA9lcQGIwNogjSFgJOHgQfmnM2xolv9bpVReeI">
+  
+
+   <table id="instances" class="table table-striped datatable  tablesorter tablesorter-default">
+    
+      <caption>
+        
+        
+<div class="table_actions clearfix">
+
+  
+    <div class="table_search">
+      
+        
+
+<div class="themable-select dropdown  select-initialized" xmlns="http://www.w3.org/1999/html"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="dropdown-title"> Instance ID =</span><span class="fa fa-caret-down"></span></button><ul class="dropdown-menu"><li data-original-index="0" data-toggle="tooltip" data-placement="top"><a data-select-value="uuid" true="">Instance ID =</a></li><li data-original-index="1" data-toggle="tooltip" data-placement="top"><a data-select-value="name" true="">Instance Name =</a></li><li data-original-index="2" data-toggle="tooltip" data-placement="top"><a data-select-value="image" true="">Image ID =</a></li><li data-original-index="3" data-toggle="tooltip" data-placement="top"><a data-select-value="image_name" true="">Image Name =</a></li><li data-original-index="4" data-toggle="tooltip" data-placement="top"><a data-select-value="ip" true="">IPv4 Address =</a></li><li data-original-index="5" data-toggle="tooltip" data-placement="top"><a data-select-value="ip6" true="">IPv6 Address =</a></li><li data-original-index="6" data-toggle="tooltip" data-placement="top"><a data-select-value="flavor" true="">Flavor ID =</a></li><li data-original-index="7" data-toggle="tooltip" data-placement="top"><a data-select-value="flavor_name" true="">Flavor Name =</a></li><li data-original-index="8" data-toggle="tooltip" data-placement="top"><a data-select-value="key_name" true="">Key Pair Name =</a></li><li data-original-index="9" data-toggle="tooltip" data-placement="top"><a data-select-value="status" true="">Status =</a></li><li data-original-index="10" data-toggle="tooltip" data-placement="top"><a data-select-value="availability_zone" true="">Availability Zone =</a></li><li data-original-index="11" data-toggle="tooltip" data-placement="top" title="Filter by an ISO 8061 formatted time, e.g. 2016-06-14T06:27:59Z"><a data-select-value="changes-since" true="">Changes Since</a></li><li data-original-index="12" data-toggle="tooltip" data-placement="top"><a data-select-value="vcpus" true="">vCPUs =</a></li></ul><select name="instances__filter__q_field"><option value="uuid" true="">Instance ID =</option><option value="name" true="">Instance Name =</option><option value="image" true="">Image ID =</option><option value="image_name" true="">Image Name =</option><option value="ip" true="">IPv4 Address =</option><option value="ip6" true="">IPv6 Address =</option><option value="flavor" true="">Flavor ID =</option><option value="flavor_name" true="">Flavor Name =</option><option value="key_name" true="">Key Pair Name =</option><option value="status" true="">Status =</option><option value="availability_zone" true="">Availability Zone =</option><option value="changes-since" true="">Changes Since</option><option value="vcpus" true="">vCPUs =</option></select></div>
+
+      
+      <input class="form-control" value="" type="text" name="instances__filter__q">
+      <button type="submit" class="btn btn-default " id="instances__action_filter">Filter</button>
+    </div>
+  
+
+
+
+
+  
+  
+    
+<a id="instances__action_launch-ng" ng-click="modal.openLaunchInstanceWizard({ successUrl: '/dashboard/project/instances/' })" ng-controller="LaunchInstanceModalController as modal" class="btn data-table-action btn-default btn-launch ng-scope" href="javascript:void(0);" title="Launch Instance"><span class="fa fa-cloud-upload"></span> Launch Instance</a>
+
+  
+    
+<button data-batch-action="true" id="instances__action_delete" class="data-table-action btn-danger btn disabled" name="action" help_text="Deleted instances are not recoverable." type="submit" value="instances__delete"><span class="fa fa-trash"></span> Delete Instances</button>
+
+  
+
+  
+  
+    <div class="table_actions_menu">
+      <a class="btn btn-default dropdown-toggle disabled" data-toggle="dropdown" href="#">
+        
+          More Actions
+        
+        <span class="fa fa-caret-down"></span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right">
+      
+        <li>
+          
+<button data-batch-action="true" id="instances__action_start" class="data-table-action btn-default btn disabled" name="action" help_text="This action cannot be undone." type="submit" value="instances__start"> Start Instances</button>
+
+        </li>
+      
+        <li>
+          
+<button data-batch-action="true" id="instances__action_stop" class="data-table-action btn-danger btn disabled" name="action" help_text="The instance(s) will be shut off." type="submit" value="instances__stop"> Shut Off Instances</button>
+
+        </li>
+      
+        <li>
+          
+<button data-batch-action="true" id="instances__action_soft_reboot" class="data-table-action btn-danger btn disabled" name="action" help_text="Restarted instances will lose any data not saved in persistent storage." type="submit" value="instances__soft_reboot"> Soft Reboot Instances</button>
+
+        </li>
+      
+      </ul>
+    </div>
+  
+
+
+</div>
+
+      </caption>
+    
+   <thead>
+  
+  
+      
+      <tr class="table_column_header tablesorter-headerRow">
+        
+          <th class="multi_select_column tablesorter-header sorter-false" data-column="0" tabindex="0"><div class="tablesorter-header-inner">
+            
+            
+          <div class="themable-checkbox"><input type="checkbox" class="table-row-multi-select multi-select-header" id="ui-id-1"><label for="ui-id-1"></label></div><i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+          <th class="sortable anchor word-break normal_column tablesorter-header" data-column="1" tabindex="0"><div class="tablesorter-header-inner">
+            Instance Name
+            
+          <i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+          <th class="sortable word-break normal_column tablesorter-header" data-column="2" tabindex="0"><div class="tablesorter-header-inner">
+            Image Name
+            
+          <i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+          <th class="sortable normal_column tablesorter-header" data-type="ip" data-column="3" tabindex="0"><div class="tablesorter-header-inner">
+            IP Address
+            
+          <i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+          <th class="normal_column tablesorter-header sorter-false" data-column="4" tabindex="0"><div class="tablesorter-header-inner">
+            Flavor
+            
+          <i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+          <th class="sortable normal_column tablesorter-header" data-column="5" tabindex="0"><div class="tablesorter-header-inner">
+            Key Pair
+            
+          <i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+          <th class="sortable normal_column tablesorter-header" data-column="6" tabindex="0"><div class="tablesorter-header-inner">
+            Status
+            
+          <i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+          <th class="normal_column tablesorter-header sorter-false" data-column="7" tabindex="0"><div class="tablesorter-header-inner">
+            
+            
+          <i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+          <th class="sortable normal_column tablesorter-header" data-column="8" tabindex="0"><div class="tablesorter-header-inner">
+            Availability Zone
+            
+          <i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+          <th class="sortable normal_column tablesorter-header" data-column="9" tabindex="0"><div class="tablesorter-header-inner">
+            Task
+            
+          <i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+          <th class="sortable normal_column tablesorter-header" data-column="10" tabindex="0"><div class="tablesorter-header-inner">
+            Power State
+            
+          <i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+          <th class="sortable normal_column tablesorter-header" data-type="timesince" data-column="11" tabindex="0"><div class="tablesorter-header-inner">
+            Time since created
+            
+          <i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+          <th class="actions_column tablesorter-header sorter-false" data-column="12" tabindex="0"><div class="tablesorter-header-inner">
+            Actions
+            
+          <i class="table-sort-indicator tablesorter-icon"></i></div></th>
+        
+      </tr>
+      
+  
+    </thead>
+  
+    <tbody>
+    
+      <tr class="ajax-update status_up odd" data-display="webserver178-2" data-display-key="name" data-object-id="0749d7d0-8fb5-4131-8954-d9c56fb9239a" data-update-interval="2500" data-update-url="/dashboard/project/instances/?action=row_update&amp;table=instances&amp;obj_id=0749d7d0-8fb5-4131-8954-d9c56fb9239a" id="instances__row__0749d7d0-8fb5-4131-8954-d9c56fb9239a">
+    <td class="multi_select_column"><div class="themable-checkbox"><input type="checkbox" name="object_ids" value="0749d7d0-8fb5-4131-8954-d9c56fb9239a" class="table-row-multi-select" id="88f2f012-d749-47ee-b745-a5ffb156f845"><label for="88f2f012-d749-47ee-b745-a5ffb156f845"></label></div></td><td class="word-break sortable anchor normal_column"><a href="/dashboard/project/instances/0749d7d0-8fb5-4131-8954-d9c56fb9239a/">webserver178-2</a></td><td class="word-break sortable normal_column">
+            -
+        </td><td class="sortable normal_column"><ul class="list-unstyled"><li>192.168.2.14</li></ul></td><td class="normal_column"><a href="#" id="flavor_details_0749d7d0-8fb5-4131-8954-d9c56fb9239a" class="link-popover" rel="popover" tabindex="0" data-trigger="focus" data-content="
+<table class='table table-bordered'><tr><th>ID</th><td>6e4f2b4e-53be-4807-ac62-a793a4e42079</td></tr><tr><th>VCPUs</th><td>1</td></tr><tr><th>RAM</th><td>1GB</td></tr><tr><th>Size</th><td>5GB</td></tr></table>
+" data-original-title="Flavor Details: t2-micro">t2-micro</a><script type="text/javascript" charset="utf-8">
+$(function () {
+  var $flavor = $("#flavor_details_0749d7d0-8fb5-4131-8954-d9c56fb9239a");
+  // NOTE(tsufiev): check this in case this template is used in network topology -> delete instance
+  if ( $flavor.popover ) {
+    $flavor.popover({html:true});
+  }
+});
+</script></td><td class="sortable normal_column">
+            kleber_rocha
+        </td><td class="status_up sortable normal_column">
+            Active
+        </td><td class="normal_column"><span data-toggle="tooltip" title="This instance is unlocked." class="fa fa-fw fa-unlock text-muted"></span></td><td class="sortable normal_column">
+            nova
+        </td><td class="status_up sortable normal_column">
+            None
+        </td><td class="sortable normal_column">
+            Running
+        </td><td class="sortable normal_column"><span data-seconds="435522">5&nbsp;days</span></td><td class="actions_column"><div class="btn-group"><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_snapshot" class="btn data-table-action btn-default btn-sm ajax-modal" href="/dashboard/project/images/0749d7d0-8fb5-4131-8954-d9c56fb9239a/create/"> Create Snapshot</a><a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-caret-down"></span></a><ul class="dropdown-menu dropdown-menu-right row_actions"><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_associate" class="btn data-table-action ajax-modal" href="/dashboard/project/floating_ips/associate/?instance_id=0749d7d0-8fb5-4131-8954-d9c56fb9239a&amp;next=%2Fdashboard%2Fproject%2Finstances%2F"> Associate Floating IP</a></li><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_attach_interface" class="btn data-table-action btn-confirm ajax-modal" href="/dashboard/project/instances/0749d7d0-8fb5-4131-8954-d9c56fb9239a/attach_interface"> Attach Interface</a></li><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_detach_interface" class="btn data-table-action btn-confirm ajax-modal" href="/dashboard/project/instances/0749d7d0-8fb5-4131-8954-d9c56fb9239a/detach_interface"> Detach Interface</a></li><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_edit" class="btn data-table-action ajax-modal" href="/dashboard/project/instances/0749d7d0-8fb5-4131-8954-d9c56fb9239a/update?step=instance_info&amp;next=%2Fdashboard%2Fproject%2Finstances%2F"> Edit Instance</a></li><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_attach_volume" class="btn data-table-action ajax-modal" href="/dashboard/project/instances/0749d7d0-8fb5-4131-8954-d9c56fb9239a/attach_volume/"> Attach Volume</a></li><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_detach_volume" class="btn data-table-action ajax-modal" href="/dashboard/project/instances/0749d7d0-8fb5-4131-8954-d9c56fb9239a/detach_volume/"> Detach Volume</a></li><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_update_metadata" ng-click="modal.openMetadataModal('instance', '0749d7d0-8fb5-4131-8954-d9c56fb9239a', true, 'metadata')" ng-controller="MetadataModalHelperController as modal" class="btn data-table-action  ng-scope" href="javascript:void(0);"> Update Metadata</a></li><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_edit_secgroups" class="btn data-table-action ajax-modal" href="/dashboard/project/instances/0749d7d0-8fb5-4131-8954-d9c56fb9239a/update?step=update_security_groups&amp;next=%2Fdashboard%2Fproject%2Finstances%2F"> Edit Security Groups</a></li><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_edit_port_secgroups" class="btn data-table-action " href="/dashboard/project/instances/0749d7d0-8fb5-4131-8954-d9c56fb9239a/?tab=instance_details__interfaces"> Edit Port Security Groups</a></li><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_console" class="btn data-table-action btn-console" href="/dashboard/project/instances/0749d7d0-8fb5-4131-8954-d9c56fb9239a/?tab=instance_details__console"> Console</a></li><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_log" class="btn data-table-action btn-log" href="/dashboard/project/instances/0749d7d0-8fb5-4131-8954-d9c56fb9239a/?tab=instance_details__log"> View Log</a></li><li><button data-batch-action="true" id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_pause" class="data-table-action btn-default btn" name="action" help_text="This action cannot be undone." type="submit" value="instances__pause__0749d7d0-8fb5-4131-8954-d9c56fb9239a"> Pause Instance</button></li><li><button data-batch-action="true" id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_suspend" class="data-table-action btn-default btn" name="action" help_text="This action cannot be undone." type="submit" value="instances__suspend__0749d7d0-8fb5-4131-8954-d9c56fb9239a"> Suspend Instance</button></li><li><button data-batch-action="true" id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_shelve" class="data-table-action btn-default btn" name="action" help_text="This action cannot be undone." type="submit" value="instances__shelve__0749d7d0-8fb5-4131-8954-d9c56fb9239a"> Shelve Instance</button></li><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_resize" class="btn data-table-action btn-danger ajax-modal btn-resize" href="/dashboard/project/instances/0749d7d0-8fb5-4131-8954-d9c56fb9239a/resize?step=flavor_choice&amp;next=%2Fdashboard%2Fproject%2Finstances%2F"> Resize Instance</a></li><li><button data-batch-action="true" id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_lock" class="data-table-action btn-default btn" name="action" help_text="This action cannot be undone." type="submit" value="instances__lock__0749d7d0-8fb5-4131-8954-d9c56fb9239a"> Lock Instance</button></li><li><button data-batch-action="true" id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_soft_reboot" class="data-table-action btn-danger btn" name="action" help_text="Restarted instances will lose any data not saved in persistent storage." type="submit" value="instances__soft_reboot__0749d7d0-8fb5-4131-8954-d9c56fb9239a"> Soft Reboot Instance</button></li><li><button data-batch-action="true" id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_reboot" class="data-table-action btn-danger btn" name="action" help_text="Restarted instances will lose any data not saved in persistent storage." type="submit" value="instances__reboot__0749d7d0-8fb5-4131-8954-d9c56fb9239a"> Hard Reboot Instance</button></li><li><button data-batch-action="true" id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_stop" class="data-table-action btn-danger btn" name="action" help_text="The instance(s) will be shut off." type="submit" value="instances__stop__0749d7d0-8fb5-4131-8954-d9c56fb9239a"> Shut Off Instance</button></li><li><a id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_rebuild" class="btn data-table-action btn-danger btn-rebuild ajax-modal" href="/dashboard/project/instances/0749d7d0-8fb5-4131-8954-d9c56fb9239a/rebuild"> Rebuild Instance</a></li><li><button data-batch-action="true" id="instances__row_0749d7d0-8fb5-4131-8954-d9c56fb9239a__action_delete" class="data-table-action btn-danger btn" name="action" help_text="Deleted instances are not recoverable." type="submit" value="instances__delete__0749d7d0-8fb5-4131-8954-d9c56fb9239a"> Delete Instance</button></li></ul></div></td>
+</tr>
+
+    
+      <tr class="ajax-update status_up even" data-display="webserver178-1" data-display-key="name" data-object-id="c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9" data-update-interval="2500" data-update-url="/dashboard/project/instances/?action=row_update&amp;table=instances&amp;obj_id=c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9" id="instances__row__c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9">
+    <td class="multi_select_column"><div class="themable-checkbox"><input type="checkbox" name="object_ids" value="c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9" class="table-row-multi-select" id="31d8a213-30d0-489b-825e-94de75bf5be8"><label for="31d8a213-30d0-489b-825e-94de75bf5be8"></label></div></td><td class="word-break sortable anchor normal_column"><a href="/dashboard/project/instances/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/">webserver178-1</a></td><td class="word-break sortable normal_column">
+            -
+        </td><td class="sortable normal_column"><ul class="list-unstyled"><li>192.168.2.11</li></ul></td><td class="normal_column"><a href="#" id="flavor_details_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9" class="link-popover" rel="popover" tabindex="0" data-trigger="focus" data-content="
+<table class='table table-bordered'><tr><th>ID</th><td>6e4f2b4e-53be-4807-ac62-a793a4e42079</td></tr><tr><th>VCPUs</th><td>1</td></tr><tr><th>RAM</th><td>1GB</td></tr><tr><th>Size</th><td>5GB</td></tr></table>
+" data-original-title="Flavor Details: t2-micro">t2-micro</a><script type="text/javascript" charset="utf-8">
+$(function () {
+  var $flavor = $("#flavor_details_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9");
+  // NOTE(tsufiev): check this in case this template is used in network topology -> delete instance
+  if ( $flavor.popover ) {
+    $flavor.popover({html:true});
+  }
+});
+</script></td><td class="sortable normal_column">
+            kleber_rocha
+        </td><td class="status_up sortable normal_column">
+            Active
+        </td><td class="normal_column"><span data-toggle="tooltip" title="This instance is unlocked." class="fa fa-fw fa-unlock text-muted"></span></td><td class="sortable normal_column">
+            nova
+        </td><td class="status_up sortable normal_column">
+            None
+        </td><td class="sortable normal_column">
+            Running
+        </td><td class="sortable normal_column"><span data-seconds="435522">5&nbsp;days</span></td><td class="actions_column"><div class="btn-group"><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_snapshot" class="btn data-table-action btn-default btn-sm ajax-modal" href="/dashboard/project/images/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/create/"> Create Snapshot</a><a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-caret-down"></span></a><ul class="dropdown-menu dropdown-menu-right row_actions"><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_associate" class="btn data-table-action ajax-modal" href="/dashboard/project/floating_ips/associate/?instance_id=c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9&amp;next=%2Fdashboard%2Fproject%2Finstances%2F"> Associate Floating IP</a></li><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_attach_interface" class="btn data-table-action btn-confirm ajax-modal" href="/dashboard/project/instances/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/attach_interface"> Attach Interface</a></li><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_detach_interface" class="btn data-table-action btn-confirm ajax-modal" href="/dashboard/project/instances/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/detach_interface"> Detach Interface</a></li><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_edit" class="btn data-table-action ajax-modal" href="/dashboard/project/instances/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/update?step=instance_info&amp;next=%2Fdashboard%2Fproject%2Finstances%2F"> Edit Instance</a></li><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_attach_volume" class="btn data-table-action ajax-modal" href="/dashboard/project/instances/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/attach_volume/"> Attach Volume</a></li><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_detach_volume" class="btn data-table-action ajax-modal" href="/dashboard/project/instances/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/detach_volume/"> Detach Volume</a></li><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_update_metadata" ng-click="modal.openMetadataModal('instance', 'c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9', true, 'metadata')" ng-controller="MetadataModalHelperController as modal" class="btn data-table-action  ng-scope" href="javascript:void(0);"> Update Metadata</a></li><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_edit_secgroups" class="btn data-table-action ajax-modal" href="/dashboard/project/instances/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/update?step=update_security_groups&amp;next=%2Fdashboard%2Fproject%2Finstances%2F"> Edit Security Groups</a></li><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_edit_port_secgroups" class="btn data-table-action " href="/dashboard/project/instances/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/?tab=instance_details__interfaces"> Edit Port Security Groups</a></li><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_console" class="btn data-table-action btn-console" href="/dashboard/project/instances/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/?tab=instance_details__console"> Console</a></li><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_log" class="btn data-table-action btn-log" href="/dashboard/project/instances/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/?tab=instance_details__log"> View Log</a></li><li><button data-batch-action="true" id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_pause" class="data-table-action btn-default btn" name="action" help_text="This action cannot be undone." type="submit" value="instances__pause__c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9"> Pause Instance</button></li><li><button data-batch-action="true" id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_suspend" class="data-table-action btn-default btn" name="action" help_text="This action cannot be undone." type="submit" value="instances__suspend__c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9"> Suspend Instance</button></li><li><button data-batch-action="true" id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_shelve" class="data-table-action btn-default btn" name="action" help_text="This action cannot be undone." type="submit" value="instances__shelve__c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9"> Shelve Instance</button></li><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_resize" class="btn data-table-action btn-danger ajax-modal btn-resize" href="/dashboard/project/instances/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/resize?step=flavor_choice&amp;next=%2Fdashboard%2Fproject%2Finstances%2F"> Resize Instance</a></li><li><button data-batch-action="true" id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_lock" class="data-table-action btn-default btn" name="action" help_text="This action cannot be undone." type="submit" value="instances__lock__c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9"> Lock Instance</button></li><li><button data-batch-action="true" id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_soft_reboot" class="data-table-action btn-danger btn" name="action" help_text="Restarted instances will lose any data not saved in persistent storage." type="submit" value="instances__soft_reboot__c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9"> Soft Reboot Instance</button></li><li><button data-batch-action="true" id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_reboot" class="data-table-action btn-danger btn" name="action" help_text="Restarted instances will lose any data not saved in persistent storage." type="submit" value="instances__reboot__c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9"> Hard Reboot Instance</button></li><li><button data-batch-action="true" id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_stop" class="data-table-action btn-danger btn" name="action" help_text="The instance(s) will be shut off." type="submit" value="instances__stop__c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9"> Shut Off Instance</button></li><li><a id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_rebuild" class="btn data-table-action btn-danger btn-rebuild ajax-modal" href="/dashboard/project/instances/c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9/rebuild"> Rebuild Instance</a></li><li><button data-batch-action="true" id="instances__row_c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9__action_delete" class="data-table-action btn-danger btn" name="action" help_text="Deleted instances are not recoverable." type="submit" value="instances__delete__c3ec8caf-c411-4c1a-ab3a-6f14cb2e83d9"> Delete Instance</button></li></ul></div></td>
+</tr>
+
+    
+    </tbody>
+  
+  
+    
+    <tfoot>
+      
+      
+<tr>
+    <td colspan="13" data-column="0">
+        <span class="table_count">Displaying 2 items</span>
+        
+        
+        
+    </td>
+</tr>
+    </tfoot>
+    
+  
+  </table>
+
+  
+  </form>
+</div>
+</div>
+
+                </div>
+              </section>
+            </div>
+
+</div>
+        </div>
+
+      </main>
+      <!-- /Main Content -->
+
+      <!-- Footer -->
+      <footer class="bg-white w-100 pl-5 pr-5 pt-4 pb-4 mt-auto">
+         <div>netK © 2019</div>
+      </footer>
+      <!-- /Footer -->
+
+    </div>
+    <!-- /Main Part -->
+
+    <!-- Right Sidebar -->
+    <!-- /Right Sidebar -->
+
+  </div>
+</div>
+
+<!-- JS Common -->
+<script src="assets/vendor/popper/1.12.9/popper.min.js"></script>
+<script src="assets/vendor/toastr/2.1.3/toastr.min.js"></script>
+<script src="assets/vendor/highlight/9.12.0/highlight.pack.js"></script>
+
+<!-- JS Page -->
+<script src="assets/vendor/chartjs/2.7.0/chart.min.js"></script>
+<script src="assets/vendor/moment/min/moment.min.js"></script>
+<script src="assets/vendor/bootstrap-datepicker/js/tempusdominus.min.js"></script>
+
+<!-- JS Custom -->
+<script src="assets/custom/1.0.0/js/bootstrap.min.js"></script>
+<script src="assets/custom/1.0.0/js/script.js"></script>
+</body>
+</html>

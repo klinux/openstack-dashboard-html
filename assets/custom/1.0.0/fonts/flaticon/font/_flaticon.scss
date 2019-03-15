@@ -1,0 +1,322 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 15/03/2019 03:33
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-cloud:before { content: "\f100"; }
+.flaticon-computer:before { content: "\f101"; }
+.flaticon-chip:before { content: "\f102"; }
+.flaticon-computer-graphic:before { content: "\f103"; }
+.flaticon-responsive:before { content: "\f104"; }
+.flaticon-computer-1:before { content: "\f105"; }
+.flaticon-monitor:before { content: "\f106"; }
+.flaticon-checklist:before { content: "\f107"; }
+.flaticon-cloud-computing:before { content: "\f108"; }
+.flaticon-gears:before { content: "\f109"; }
+.flaticon-hosting:before { content: "\f10a"; }
+.flaticon-algorithm:before { content: "\f10b"; }
+.flaticon-analytics:before { content: "\f10c"; }
+.flaticon-web:before { content: "\f10d"; }
+.flaticon-server:before { content: "\f10e"; }
+.flaticon-server-1:before { content: "\f10f"; }
+.flaticon-laptop:before { content: "\f110"; }
+.flaticon-gear:before { content: "\f111"; }
+.flaticon-backup:before { content: "\f112"; }
+.flaticon-gear-1:before { content: "\f113"; }
+.flaticon-server-2:before { content: "\f114"; }
+.flaticon-network:before { content: "\f115"; }
+.flaticon-ui:before { content: "\f116"; }
+.flaticon-ui-1:before { content: "\f117"; }
+.flaticon-cell:before { content: "\f118"; }
+.flaticon-network-1:before { content: "\f119"; }
+.flaticon-data:before { content: "\f11a"; }
+.flaticon-network-2:before { content: "\f11b"; }
+.flaticon-algorithm-1:before { content: "\f11c"; }
+.flaticon-shield:before { content: "\f11d"; }
+.flaticon-internet:before { content: "\f11e"; }
+.flaticon-cloud-1:before { content: "\f11f"; }
+.flaticon-data-1:before { content: "\f120"; }
+.flaticon-server-3:before { content: "\f121"; }
+.flaticon-software:before { content: "\f122"; }
+.flaticon-bug:before { content: "\f123"; }
+.flaticon-programmer:before { content: "\f124"; }
+.flaticon-cardiogram:before { content: "\f125"; }
+.flaticon-hard-drive:before { content: "\f126"; }
+.flaticon-cloud-2:before { content: "\f127"; }
+.flaticon-browser:before { content: "\f128"; }
+.flaticon-hacker:before { content: "\f129"; }
+.flaticon-monitor-1:before { content: "\f12a"; }
+.flaticon-cloud-3:before { content: "\f12b"; }
+.flaticon-server-4:before { content: "\f12c"; }
+.flaticon-server-5:before { content: "\f12d"; }
+.flaticon-server-6:before { content: "\f12e"; }
+.flaticon-database:before { content: "\f12f"; }
+.flaticon-server-7:before { content: "\f130"; }
+.flaticon-server-8:before { content: "\f131"; }
+.flaticon-cloud-4:before { content: "\f132"; }
+.flaticon-data-2:before { content: "\f133"; }
+.flaticon-server-9:before { content: "\f134"; }
+.flaticon-clock:before { content: "\f135"; }
+.flaticon-mail:before { content: "\f136"; }
+.flaticon-download:before { content: "\f137"; }
+.flaticon-cloud-5:before { content: "\f138"; }
+.flaticon-key:before { content: "\f139"; }
+.flaticon-data-3:before { content: "\f13a"; }
+.flaticon-password:before { content: "\f13b"; }
+.flaticon-cloud-6:before { content: "\f13c"; }
+.flaticon-share:before { content: "\f13d"; }
+.flaticon-server-10:before { content: "\f13e"; }
+.flaticon-data-4:before { content: "\f13f"; }
+.flaticon-data-5:before { content: "\f140"; }
+.flaticon-data-6:before { content: "\f141"; }
+.flaticon-folder:before { content: "\f142"; }
+.flaticon-server-11:before { content: "\f143"; }
+.flaticon-ui-2:before { content: "\f144"; }
+.flaticon-network-3:before { content: "\f145"; }
+.flaticon-cloud-7:before { content: "\f146"; }
+.flaticon-ui-3:before { content: "\f147"; }
+.flaticon-cloud-8:before { content: "\f148"; }
+.flaticon-cloud-computing-1:before { content: "\f149"; }
+.flaticon-cloud-computing-2:before { content: "\f14a"; }
+.flaticon-cloud-9:before { content: "\f14b"; }
+.flaticon-cloud-10:before { content: "\f14c"; }
+.flaticon-dollar:before { content: "\f14d"; }
+.flaticon-dollar-1:before { content: "\f14e"; }
+.flaticon-ui-4:before { content: "\f14f"; }
+.flaticon-ui-5:before { content: "\f150"; }
+.flaticon-ui-6:before { content: "\f151"; }
+.flaticon-seo-and-web:before { content: "\f152"; }
+.flaticon-data-7:before { content: "\f153"; }
+.flaticon-ui-7:before { content: "\f154"; }
+.flaticon-seasoning:before { content: "\f155"; }
+.flaticon-network-4:before { content: "\f156"; }
+.flaticon-database-1:before { content: "\f157"; }
+.flaticon-share-1:before { content: "\f158"; }
+.flaticon-group:before { content: "\f159"; }
+.flaticon-user:before { content: "\f15a"; }
+.flaticon-user-1:before { content: "\f15b"; }
+.flaticon-team:before { content: "\f15c"; }
+.flaticon-network-5:before { content: "\f15d"; }
+.flaticon-connection:before { content: "\f15e"; }
+.flaticon-shield-1:before { content: "\f15f"; }
+.flaticon-shield-2:before { content: "\f160"; }
+.flaticon-scale:before { content: "\f161"; }
+.flaticon-key-1:before { content: "\f162"; }
+.flaticon-server-12:before { content: "\f163"; }
+.flaticon-server-13:before { content: "\f164"; }
+.flaticon-disk:before { content: "\f165"; }
+.flaticon-hard-drive-1:before { content: "\f166"; }
+.flaticon-burn-compact-disk:before { content: "\f167"; }
+.flaticon-disk-1:before { content: "\f168"; }
+.flaticon-linux:before { content: "\f169"; }
+.flaticon-windows:before { content: "\f16a"; }
+.flaticon-user-2:before { content: "\f16b"; }
+.flaticon-user-3:before { content: "\f16c"; }
+.flaticon-user-4:before { content: "\f16d"; }
+.flaticon-administrator:before { content: "\f16e"; }
+.flaticon-id-card:before { content: "\f16f"; }
+.flaticon-id:before { content: "\f170"; }
+.flaticon-id-card-1:before { content: "\f171"; }
+.flaticon-id-card-2:before { content: "\f172"; }
+.flaticon-server-14:before { content: "\f173"; }
+.flaticon-ai:before { content: "\f174"; }
+.flaticon-share-2:before { content: "\f175"; }
+.flaticon-start-up:before { content: "\f176"; }
+.flaticon-presentation:before { content: "\f177"; }
+.flaticon-project:before { content: "\f178"; }
+.flaticon-planning:before { content: "\f179"; }
+.flaticon-speedometer:before { content: "\f17a"; }
+.flaticon-home:before { content: "\f17b"; }
+.flaticon-speedometer-1:before { content: "\f17c"; }
+.flaticon-speedometer-2:before { content: "\f17d"; }
+.flaticon-dashboard:before { content: "\f17e"; }
+.flaticon-brainstorming:before { content: "\f17f"; }
+.flaticon-database-2:before { content: "\f180"; }
+.flaticon-mainframe:before { content: "\f181"; }
+.flaticon-data-8:before { content: "\f182"; }
+.flaticon-server-15:before { content: "\f183"; }
+.flaticon-server-16:before { content: "\f184"; }
+.flaticon-servers:before { content: "\f185"; }
+.flaticon-server-17:before { content: "\f186"; }
+.flaticon-robot:before { content: "\f187"; }
+.flaticon-robot-1:before { content: "\f188"; }
+.flaticon-bot:before { content: "\f189"; }
+.flaticon-robot-2:before { content: "\f18a"; }
+.flaticon-administration:before { content: "\f18b"; }
+.flaticon-leader:before { content: "\f18c"; }
+    
+    $font-Flaticon-cloud: "\f100";
+    $font-Flaticon-computer: "\f101";
+    $font-Flaticon-chip: "\f102";
+    $font-Flaticon-computer-graphic: "\f103";
+    $font-Flaticon-responsive: "\f104";
+    $font-Flaticon-computer-1: "\f105";
+    $font-Flaticon-monitor: "\f106";
+    $font-Flaticon-checklist: "\f107";
+    $font-Flaticon-cloud-computing: "\f108";
+    $font-Flaticon-gears: "\f109";
+    $font-Flaticon-hosting: "\f10a";
+    $font-Flaticon-algorithm: "\f10b";
+    $font-Flaticon-analytics: "\f10c";
+    $font-Flaticon-web: "\f10d";
+    $font-Flaticon-server: "\f10e";
+    $font-Flaticon-server-1: "\f10f";
+    $font-Flaticon-laptop: "\f110";
+    $font-Flaticon-gear: "\f111";
+    $font-Flaticon-backup: "\f112";
+    $font-Flaticon-gear-1: "\f113";
+    $font-Flaticon-server-2: "\f114";
+    $font-Flaticon-network: "\f115";
+    $font-Flaticon-ui: "\f116";
+    $font-Flaticon-ui-1: "\f117";
+    $font-Flaticon-cell: "\f118";
+    $font-Flaticon-network-1: "\f119";
+    $font-Flaticon-data: "\f11a";
+    $font-Flaticon-network-2: "\f11b";
+    $font-Flaticon-algorithm-1: "\f11c";
+    $font-Flaticon-shield: "\f11d";
+    $font-Flaticon-internet: "\f11e";
+    $font-Flaticon-cloud-1: "\f11f";
+    $font-Flaticon-data-1: "\f120";
+    $font-Flaticon-server-3: "\f121";
+    $font-Flaticon-software: "\f122";
+    $font-Flaticon-bug: "\f123";
+    $font-Flaticon-programmer: "\f124";
+    $font-Flaticon-cardiogram: "\f125";
+    $font-Flaticon-hard-drive: "\f126";
+    $font-Flaticon-cloud-2: "\f127";
+    $font-Flaticon-browser: "\f128";
+    $font-Flaticon-hacker: "\f129";
+    $font-Flaticon-monitor-1: "\f12a";
+    $font-Flaticon-cloud-3: "\f12b";
+    $font-Flaticon-server-4: "\f12c";
+    $font-Flaticon-server-5: "\f12d";
+    $font-Flaticon-server-6: "\f12e";
+    $font-Flaticon-database: "\f12f";
+    $font-Flaticon-server-7: "\f130";
+    $font-Flaticon-server-8: "\f131";
+    $font-Flaticon-cloud-4: "\f132";
+    $font-Flaticon-data-2: "\f133";
+    $font-Flaticon-server-9: "\f134";
+    $font-Flaticon-clock: "\f135";
+    $font-Flaticon-mail: "\f136";
+    $font-Flaticon-download: "\f137";
+    $font-Flaticon-cloud-5: "\f138";
+    $font-Flaticon-key: "\f139";
+    $font-Flaticon-data-3: "\f13a";
+    $font-Flaticon-password: "\f13b";
+    $font-Flaticon-cloud-6: "\f13c";
+    $font-Flaticon-share: "\f13d";
+    $font-Flaticon-server-10: "\f13e";
+    $font-Flaticon-data-4: "\f13f";
+    $font-Flaticon-data-5: "\f140";
+    $font-Flaticon-data-6: "\f141";
+    $font-Flaticon-folder: "\f142";
+    $font-Flaticon-server-11: "\f143";
+    $font-Flaticon-ui-2: "\f144";
+    $font-Flaticon-network-3: "\f145";
+    $font-Flaticon-cloud-7: "\f146";
+    $font-Flaticon-ui-3: "\f147";
+    $font-Flaticon-cloud-8: "\f148";
+    $font-Flaticon-cloud-computing-1: "\f149";
+    $font-Flaticon-cloud-computing-2: "\f14a";
+    $font-Flaticon-cloud-9: "\f14b";
+    $font-Flaticon-cloud-10: "\f14c";
+    $font-Flaticon-dollar: "\f14d";
+    $font-Flaticon-dollar-1: "\f14e";
+    $font-Flaticon-ui-4: "\f14f";
+    $font-Flaticon-ui-5: "\f150";
+    $font-Flaticon-ui-6: "\f151";
+    $font-Flaticon-seo-and-web: "\f152";
+    $font-Flaticon-data-7: "\f153";
+    $font-Flaticon-ui-7: "\f154";
+    $font-Flaticon-seasoning: "\f155";
+    $font-Flaticon-network-4: "\f156";
+    $font-Flaticon-database-1: "\f157";
+    $font-Flaticon-share-1: "\f158";
+    $font-Flaticon-group: "\f159";
+    $font-Flaticon-user: "\f15a";
+    $font-Flaticon-user-1: "\f15b";
+    $font-Flaticon-team: "\f15c";
+    $font-Flaticon-network-5: "\f15d";
+    $font-Flaticon-connection: "\f15e";
+    $font-Flaticon-shield-1: "\f15f";
+    $font-Flaticon-shield-2: "\f160";
+    $font-Flaticon-scale: "\f161";
+    $font-Flaticon-key-1: "\f162";
+    $font-Flaticon-server-12: "\f163";
+    $font-Flaticon-server-13: "\f164";
+    $font-Flaticon-disk: "\f165";
+    $font-Flaticon-hard-drive-1: "\f166";
+    $font-Flaticon-burn-compact-disk: "\f167";
+    $font-Flaticon-disk-1: "\f168";
+    $font-Flaticon-linux: "\f169";
+    $font-Flaticon-windows: "\f16a";
+    $font-Flaticon-user-2: "\f16b";
+    $font-Flaticon-user-3: "\f16c";
+    $font-Flaticon-user-4: "\f16d";
+    $font-Flaticon-administrator: "\f16e";
+    $font-Flaticon-id-card: "\f16f";
+    $font-Flaticon-id: "\f170";
+    $font-Flaticon-id-card-1: "\f171";
+    $font-Flaticon-id-card-2: "\f172";
+    $font-Flaticon-server-14: "\f173";
+    $font-Flaticon-ai: "\f174";
+    $font-Flaticon-share-2: "\f175";
+    $font-Flaticon-start-up: "\f176";
+    $font-Flaticon-presentation: "\f177";
+    $font-Flaticon-project: "\f178";
+    $font-Flaticon-planning: "\f179";
+    $font-Flaticon-speedometer: "\f17a";
+    $font-Flaticon-home: "\f17b";
+    $font-Flaticon-speedometer-1: "\f17c";
+    $font-Flaticon-speedometer-2: "\f17d";
+    $font-Flaticon-dashboard: "\f17e";
+    $font-Flaticon-brainstorming: "\f17f";
+    $font-Flaticon-database-2: "\f180";
+    $font-Flaticon-mainframe: "\f181";
+    $font-Flaticon-data-8: "\f182";
+    $font-Flaticon-server-15: "\f183";
+    $font-Flaticon-server-16: "\f184";
+    $font-Flaticon-servers: "\f185";
+    $font-Flaticon-server-17: "\f186";
+    $font-Flaticon-robot: "\f187";
+    $font-Flaticon-robot-1: "\f188";
+    $font-Flaticon-bot: "\f189";
+    $font-Flaticon-robot-2: "\f18a";
+    $font-Flaticon-administration: "\f18b";
+    $font-Flaticon-leader: "\f18c";
